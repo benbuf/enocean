@@ -15,3 +15,9 @@ man
 MANIFEST
 dist
 pip-selfcheck.json
+/env
+/.vs/enocean/v14
+/examples
+/enocean.pyproj
+/enocean.sln
+/hassTest.py

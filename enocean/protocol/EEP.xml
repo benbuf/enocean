@@ -706,8 +706,8 @@
             <item description="true" value="1" />
           </enum>
           <enum shortcut="BCAP" description="Battery capacity; change battery next days" offset="11" size="1">
-            <item description="false" value="0" />
-            <item description="true" value="1" />
+            <item description="false" value="1" />
+            <item description="true" value="0" />
           </enum>
           <enum shortcut="CCO" description="Contact, cover open" offset="12" size="1">
             <item description="false" value="0" />
@@ -735,16 +735,20 @@
               <max>40</max>
             </scale>
           </value>
+          <enum shortcut="LRNB" description="LRN Bit" offset="28" size="1">
+            <item description="Teach In Telegram" value="0" />
+            <item description="Data Telegram" value="1" />
+          </enum>
         </data>
         <data direction="2">
-          <value shortcut="SP" description="Valve Position" offset="0" size="8" unit="%">
+          <value shortcut="SP" description="Valve position or Temperature setpoint" offset="0" size="8" unit="% or °C">
             <range>
               <min>0</min>
-              <max>100</max>
+              <max>255</max>
             </range>
             <scale>
               <min>0</min>
-              <max>100</max>
+              <max>40</max>
             </scale>
           </value>
           <value shortcut="TMP" description="Temperature from RCU" offset="8" size="8" unit="°C">
@@ -788,6 +792,10 @@
           <enum shortcut="RCU" description="Select function" offset="23" size="1">
             <item description="RCU" value="0" />
             <item description="service on" value="1" />
+          </enum>
+          <enum shortcut="LRNB" description="LRN Bit" offset="28" size="1">
+            <item description="Teach In Telegram" value="0" />
+            <item description="Data Telegram" value="1" />
           </enum>
         </data>
       </profile>
