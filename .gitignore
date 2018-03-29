@@ -20,4 +20,6 @@ pip-selfcheck.json
 /examples
 /enocean.pyproj
 /enocean.sln
-/hassTest.py
+.vscode/
+lib64
+pyvenv.cfg
